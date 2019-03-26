@@ -9,10 +9,10 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      searchresult:  '',
+      searchresult: '',
       data: []
     }
-    
+
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
@@ -20,7 +20,7 @@ class App extends Component {
 
   componentDidMount() {
   }
-  
+
   // fetchData() {
   //   const API_KEY = process.env.REACT_APP_SCLOUD_API_KEY
   //   let query = this.state.searchresult
@@ -29,22 +29,22 @@ class App extends Component {
   //   .then(parsedJSON => console.log(parsedJSON))
   //   .catch(error => console.log('parsing failed'))
   // }
-  
+
   handleChange(e) {
-  //  console.log(e)
+    //  console.log(e)
     this.setState({
       searchresult: e.target.value
     })
-    // console.log(`this.state.searchresult is ${this.state.searchresult}`)
+    // console.log(`this.state.searchresult is ${this}`)
   }
-  
+
   handleSubmit(e) {
     e.preventDefault();
     const API_KEY = process.env.REACT_APP_SCLOUD_API_KEY
     let query = this.state.searchresult
-    console.log( `Show me the word ${this.state.searchresult}`)
+    console.log(`Show me the word ${query}`)
     fetch(`http://api.soundcloud.com/tracks?client_id=${API_KEY}&q=${query}&`)
-    .then(function (response) {
+      .then(function (response) {
         return response.json();
       })
       .then(jsonData => {
@@ -52,19 +52,18 @@ class App extends Component {
           data: jsonData
         }))
       })
-    }
+  }
 
-    render() {
-      return (
-        <div className="App">
+  render() {
+    return (
+      <div className="App">
         <h1>SoundCloud WebPlayer - App.js</h1>
         <form onSubmit={e => this.handleSubmit(e)}>
-          <input type='text' value={this.state.searchresult} onChange={e => this.handleChange(e)}/>
+          <input type='text' value={this.state.searchresult} onChange={e => this.handleChange(e)} />
           <input type='submit' search='Submit' />
         </form>
-        <br/>
-        {/* <p>{this.state.searchresult}</p> */}
-        <Tracks searchresult={this.state.data}/>
+        <br />
+        <Tracks searchresult={this.state.data} />
         <footer>This is the Footer - Footer.js</footer>
       </div>
     )
