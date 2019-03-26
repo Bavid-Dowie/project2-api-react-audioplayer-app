@@ -4,12 +4,15 @@
     width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
+    background: #00095c;
 }
 
 .track-1 {
     width: 45%;
+    border: outset 10px #949994;
+    margin: 20px;
 }
-
+/* 
 .track-2 {
     width: 45%;
 }
@@ -20,4 +23,4 @@
 
 .track-4 {
     width: 45%;
-}
+} */
