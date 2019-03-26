@@ -1,4 +1,4 @@
-.tracks {
+.trackBox {
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -12,15 +12,3 @@
     border: outset 10px #949994;
     margin: 20px;
 }
-/* 
-.track-2 {
-    width: 45%;
-}
-
-.track-3 {
-    width: 45%;
-}
-
-.track-4 {
-    width: 45%;
-} */

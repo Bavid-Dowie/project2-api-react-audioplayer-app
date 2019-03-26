@@ -2,7 +2,12 @@ import React, { Component } from 'react'
 import './Tracks.css'
 
 class Tracks extends Component {
+    constructor(props) {
+        super(props)
+    }
     render() {
+        let results = this.props.searchresult
+        console.log(results)
         const tracks = [
             {
                 title: 'Drum Loop 1',
@@ -22,11 +27,11 @@ class Tracks extends Component {
             }
         ]
         return (
-            <div className='tracks'>
+            <div className='trackBox'>
                 <a className='track-1' href={tracks[0].url}>{tracks[0].title}</a>
-                <a className='track-1' href={tracks[1].url}>{tracks[0].title}</a>
-                <a className='track-1' href={tracks[2].url}>{tracks[0].title}</a>
-                <a className='track-1' href={tracks[3].url}>{tracks[0].title}</a>
+                <a className='track-1' href={tracks[1].url}>{tracks[1].title}</a>
+                <a className='track-1' href={tracks[2].url}>{tracks[2].title}</a>
+                <a className='track-1' href={tracks[3].url}>{tracks[3].title}</a>
             </div>
         )
     }
