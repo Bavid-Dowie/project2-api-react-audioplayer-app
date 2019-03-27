@@ -6,15 +6,13 @@
     justify-content: center;
     background: #00095c;
 }
-.playerBox  {
+ .playerBox  { 
     background: #570e85;
-    width: 25%;
-    height: 20%;
-    border: 10px;
-    margin: 5% 10% 0% 10%;
+    flex: 0;
+    margin: 10px;
     word-wrap: break-word;
     border-radius: 10%;
-}
+} 
 
 .track-1 {
     color: #ffffff;
