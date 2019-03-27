@@ -8,11 +8,16 @@ function SongPlayer(props)  {
     console.log(`This is line 7 songplayer`)
     console.log(props.info[0].permalink_url)
     console.log(props.info)
+    const playerData = props.info.map(player => {
+        return (
+        <ReactPlayer key={player.id} url={player.permalink_url} />
+        )
+    })
     
     return (
+
         <div>
-            <ReactPlayer url={props.info[0].permalink_url} />
-            {/* <ReactPlayer url={props.info} /> */}
+            {playerData}
         </div>
     )
 }

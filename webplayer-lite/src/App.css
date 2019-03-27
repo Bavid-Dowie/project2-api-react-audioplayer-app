@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
@@ -18,3 +18,4 @@
 .App-link {
   color: #61dafb;
 }
+

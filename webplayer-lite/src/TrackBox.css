@@ -7,11 +7,10 @@
     background: #00095c;
 }
  .playerBox  { 
-    background: #570e85;
+    background: #ffffff;
     flex: 0;
     margin: 10px;
     word-wrap: break-word;
-    border-radius: 10%;
 } 
 
 .track-1 {

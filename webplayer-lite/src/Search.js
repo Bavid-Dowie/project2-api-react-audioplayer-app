@@ -23,7 +23,7 @@ export default class Search extends Component {
         e.preventDefault();
         const API_KEY = process.env.REACT_APP_SCLOUD_API_KEY
         let query = this.state.searchresult
-        fetch(`http://api.soundcloud.com/tracks?client_id=${API_KEY}&q=${query}&`)
+        fetch(`http://api.soundcloud.com/tracks?client_id=${API_KEY}&q=${query}& loops`)
             .then(function (response) {
                 return response.json();
             })
