@@ -4,16 +4,12 @@
     width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
-    background: #00095c;
+    background: whitesmoke;
 }
- .playerBox  { 
-    background: #ffffff;
+  
+.react-player {
+    margin: 24px 12px 0 12px;
     flex: 0;
-    margin: 10px;
+    flex-flow: wrap;
     word-wrap: break-word;
-} 
-
-.track-1 {
-    color: #ffffff;
-    text-decoration: none;
 }

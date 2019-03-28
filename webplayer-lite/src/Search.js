@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import TrackBox from './TrackBox'
+import './Search.css'
 
 export default class Search extends Component {
     constructor(props) {
@@ -23,7 +24,7 @@ export default class Search extends Component {
         e.preventDefault();
         const API_KEY = process.env.REACT_APP_SCLOUD_API_KEY
         let query = this.state.searchresult
-        fetch(`http://api.soundcloud.com/tracks?client_id=${API_KEY}&q=${query}& loops`)
+        fetch(`https://api.soundcloud.com/tracks?client_id=${API_KEY}&q=${query}& loops`)
             .then(function (response) {
                 return response.json();
             })
@@ -39,14 +40,16 @@ export default class Search extends Component {
             <div>
                 <form onSubmit={e => this.handleSubmit(e)}>
                     <input
+                        className='searchBar'
                         type='text'
                         value={this.state.searchresult}
                         onChange={e => this.handleChange(e)}
                     />
-                    <input
+                    <button
+                        className='searchButton'
                         type='submit'
                         search='Submit'
-                    />
+                    >Submit</button>
                 </form>
                 <br />
                 <TrackBox searchresult={this.state.data} />
