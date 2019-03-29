@@ -6,7 +6,9 @@ export default class Landing extends Component {
   render() {
     return (
       <div>
-        <Link to="/main">You landed on the landing page!</Link>
+        <Link to="/main">
+        SoundCloudAggregator
+        </Link>
       </div>
     )
   }

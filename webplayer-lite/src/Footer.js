@@ -5,7 +5,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div>
-        <footer>This is the Footer - Footer.js</footer>
+        <footer>Created by: Jeremy Zimmerman | Audio data is property of SoundCloud</footer>
       </div>
     )
   }
