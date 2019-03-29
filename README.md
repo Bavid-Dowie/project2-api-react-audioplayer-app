@@ -3,7 +3,7 @@
 
 ## Project Description
 
-A simple web-based audio player, to play audio files using React and an API (SoundCloud)
+A simple SoundCloud aggregator to fetch audio by 
 
 ## Wireframes
 
@@ -25,13 +25,13 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ## React Component Hierarchy
 
-App > Header > Nav
+App > Landing > Main
 
-App > Search > JokesList > JokeItem
+App > Main > Header
 
-App > RandomJoke
+App > Main > Search > TrackBox > ReactPlayer
 
-App > Footer
+App > Main > Footer
 
 ### State Components
 
