@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import './WelcomeHome.css'
+import './Landing.css'
 
-export default class WelcomeHome extends Component {
+export default class Landing extends Component {
   render() {
     return (
       <div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from "react-router-dom"
-import WelcomeHome from './WelcomeHome'
+import Landing from './Landing'
 import Main from './Main'
 import './App.css'
 
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Route exact path="/" render={() => <WelcomeHome />} /> 
+          <Route exact path="/" render={() => <Landing />} /> 
           <Route exact path="/main" render= {() => <Main />} /> 
         </div>
       </BrowserRouter>
