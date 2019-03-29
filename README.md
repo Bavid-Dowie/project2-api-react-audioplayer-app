@@ -38,38 +38,26 @@ App > Main > Footer
 App
 
 ### Functional Components
-Search, JokesList, JokeItem, RandomJoke, Header, Nav, Footer
+Main, Landing, Header, Search, TrackBox, Footer
 
 | Component | Description | 
 | --- | :---: |  
-| Header | This will render the header include the nav | 
-| Nav | This will render the nav |
-| Search | This will render the search input text and button | 
-| JokesList | This will render the list of jokes returned from search |
-| JokeItem | This will render the joke item in the list | 
-| RandomJoke | This will render the random joke with button to randomize joke | 
+| Landing | Landing page linked to Main via React Router |
+| Main | This will render the Header - Search - Footer |
+| Header | This will render the header | 
+| Search | This will render the search input text and button - and call TrackBox component | 
+| TrackBox | This will render the ReactPlayer to play fetched data | 
 | Footer | This will render the footer include the link to github and api | 
-
-
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Set up app | H | .5hrs| .5hrs | .5hrs |
-| Random | H | 2hrs| 2.5hrs | 2.5hrs |
-| Search Form | H | 3hrs| 3.5hrs | 2.5hrs |
-| Footer and Header | H | 3hrs| 3.5hrs | 1.5hrs |
-| React Router | H | 2hrs| 1.5hrs | 1.5hrs |
-| Style | H | 2hrs| 2.5hrs | 2.5hrs |
-| Total | H | 12.5hrs| 14hrs | 11hrs |
 
 ## Helper Functions
 
 | Function | Description | 
 | --- | :---: |  
-| Footer | This component could be use in playground projects | 
+| TrackBox | This component could be use in apps to play fetched media files directly in browser | 
 
 ## Additional Libraries
  
-[icanhazdadjoke API](https://icanhazdadjoke.com/api)
+[SoundCloud API](https://api.soundcloud.com/)
 ## Code Snippet
 
 All state for app is contained in App.js
