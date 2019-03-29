@@ -63,37 +63,33 @@ Main, Landing, Header, Search, TrackBox, Footer
 All state for app is contained in App.js
 ```javascript
 this.state = {
-	randomJoke: '',
-	jokes: [],
-	term: ''
+  searchresult: '',
+  data: []
 }
 ```
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
-**ERROR**: Unexpected token < in JSON at position 0                               
+**ERROR**: Unauthorized API key after deploying to Heroku                               
 **RESOLUTION**: 
-https://daveceddia.com/unexpected-token-in-json-at-position-0/
+https://www.slightedgecoder.com/2017/09/09/passing-api-key-heroku-node-application/
 
 Sent request with header to accept json data
 ```javascript
-randomAPI() {
-    let api = 'https://icanhazdadjoke.com/'
-    fetch(api,
-      {
-        headers: {
-          'Accept': 'application/json',
-          'User-Agent': ' My Library (https://github.com/tara-fenton/dad-jokes)'
-        }
-      }
-    ).then(response => response.json())
-      .then(json => {
-        this.setState({ randomJoke: json.joke })
-      }).catch(e => console.log(e))
-  }
-  ```
+const API_KEY = process.env.REACT_APP_SCLOUD_API_KEY
+let query = this.state.searchresult
+fetch(`https://api.soundcloud.com/tracks?client_id=${API_KEY}&q=${query}& loops`)
+    .then(function (response) {
+        return response.json();
+})
+    .then(jsonData => {
+        this.setState(prevState => ({
+            data: jsonData
+    }))
+})
+```
 
-  logic setting up button events [testing events](https://github.com/tara-fenton/dad-jokes/commit/1984c6e5eb6a2cbd91f83a00b224d2f0c8fddc55)
+  logic setting up ReactPlayer [testing events](https://github.com/Bavid-Dowie/react-audio-player/commit/47529b717f29818bf6e6b9608eedf4a62648ff8c)
 
-   logic setting up search events [testing search events](https://github.com/tara-fenton/dad-jokes/commit/7726cea8f60cb4c5410cf5964d5ebde5b59485ed)
+  logic setting up React Router [testing search events](https://github.com/Bavid-Dowie/react-audio-player/commit/5c2c4b2ecd6a0f3db47450972327940463f274db)

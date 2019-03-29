@@ -33,8 +33,8 @@ export default class Search extends Component {
                     data: jsonData
                 }))
             })
-
     }
+
     render() {
         return (
             <div>
