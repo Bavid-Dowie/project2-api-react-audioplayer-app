@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import Main from './Main'
+import { Link } from 'react-router-dom'
 import './WelcomeHome.css'
 
 export default class WelcomeHome extends Component {
   render() {
     return (
       <div>
-        <Main />
-        You landed on the landing page!
+        <Link to="/main">You landed on the landing page!</Link>
       </div>
     )
   }
