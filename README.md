@@ -58,6 +58,7 @@ Main, Landing, Header, Search, TrackBox, Footer
 ## Additional Libraries
  
 [SoundCloud API](https://api.soundcloud.com/)
+
 ## Code Snippet
 
 All state for app is contained in App.js
@@ -67,8 +68,12 @@ this.state = {
   data: []
 }
 ```
+## Screenshots:
+
+![Initial Wire Frame](20190329_114343.jpg)
 
 ## Issues and Resolutions
+
  Use this section to list of all major issues encountered and their resolution.
 
 **ERROR**: Unauthorized API key after deploying to Heroku                               

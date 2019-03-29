@@ -1,0 +1,9 @@
+.landingPage    {
+align-items: center;
+justify-content: center;
+padding: 25%;
+height: 100vh;
+background: grey;
+color: white;
+text-decoration: none;
+}

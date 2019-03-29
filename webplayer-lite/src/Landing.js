@@ -5,7 +5,7 @@ import './Landing.css'
 export default class Landing extends Component {
   render() {
     return (
-      <div>
+      <div class="landingPage">
         <Link to="/main">
         SoundCloudAggregator
         </Link>
