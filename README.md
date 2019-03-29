@@ -10,18 +10,18 @@ A simple web-based audio player, to play audio files using React and an API (Sou
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
   
 
-#### MVP EXAMPLE
+#### MVP
 - Find and use external api 
-- Render data on page 
-- Navigation to routes
-- Random joke
-- Search for joke
+- React Router for landing page
+- Search SoundCloud library by 'keyword'
+- Render SoundCloud data onto page
+- Play audio on page using React Player
 
-#### PostMVP EXAMPLE
+#### PostMVP
 
-- Allow user to choose favorites 
-- Save their choices in firebase
-- Add user auth
+- Personl user login authorization
+- Save favorite songs
+- Upload audio files to personal SoundCloud page
 
 ## React Component Hierarchy
 
